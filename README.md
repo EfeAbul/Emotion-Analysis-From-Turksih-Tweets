@@ -62,9 +62,25 @@ These labels are encoded using `LabelEncoder` before training and used for super
 | Support Vector Machine   | Classical linear classifier      |
 | Random Forest            | Ensemble tree-based model        |
 | Gradient Boosting        | Boosted decision trees           |
-| BERT + Dense Layer       | Lightweight neural classifier using BERT embeddings |
+| BERT Fine-Tuned Model    | A pre-trained BERT model (`dbmdz/bert-base-turkish-cased`) is fine-tuned end-to-end for emotion classification. The CLS token output is passed through dense layers to classify emotions. |
+
 
 ---
+
+### 🤖 Fine-Tuning with BERT
+
+Unlike using BERT just for embeddings, this project performs **full fine-tuning** on the `dbmdz/bert-base-turkish-cased` model. During training:
+
+- Input texts are tokenized with `BertTokenizer`.
+- The model receives `input_ids` and `attention_mask`.
+- The `[CLS]` token output from BERT is passed into a custom classifier head:
+  - Dense(128, ReLU)
+  - Dropout(0.3)
+  - Dense(softmax for 5 emotion classes)
+- All BERT layers are **trainable**, so the model learns task-specific representations.
+
+This approach improves performance significantly over frozen embeddings.
+
 
 ## 📈 Evaluation Metrics
 
