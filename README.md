@@ -18,7 +18,7 @@ This project performs emotion classification on Turkish tweets using multiple ma
 
 ## 📂 Dataset
 
-- **Name**: [Turkish Tweet Emotion Dataset](https://www.kaggle.com/datasets/anil1055/turkish-tweet-dataset)
+- **Name**: Turkish Tweet Emotion Dataset
 - **Source**: Kaggle
 - **Download**: [https://www.kaggle.com/datasets/anil1055/turkish-tweet-dataset](https://www.kaggle.com/datasets/anil1055/turkish-tweet-dataset)
 
