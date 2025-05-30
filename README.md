@@ -24,7 +24,7 @@ This project performs emotion classification on Turkish tweets using multiple ma
 
 This dataset contains Turkish tweets labeled with one of five emotional categories. It is used to train and evaluate emotion classification models.
 
-### 📋 Format
+###  Format
 
 | Column     | Description                          |
 |------------|--------------------------------------|
