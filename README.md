@@ -1,10 +1,10 @@
-# 🧠 Turkish Tweet Emotion Classification
+#  Turkish Tweet Emotion Classification
 
 This project performs emotion classification on Turkish tweets using multiple machine learning models. It includes both classical models (SVM, Random Forest, Gradient Boosting) and a lightweight neural model based on BERT embeddings.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 - **Goal**: Classify Turkish tweets into emotional categories.
 - **Language**: Turkish
@@ -16,7 +16,7 @@ This project performs emotion classification on Turkish tweets using multiple ma
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - **Name**: Turkish Tweet Emotion Dataset
 - **Source**: Kaggle
@@ -31,7 +31,7 @@ This dataset contains Turkish tweets labeled with one of five emotional categori
 | `Tweet`    | The content of the tweet (in Turkish)|
 | `Etiket`   | The emotion label                    |
 
-### 🎯 Emotion Classes
+###  Emotion Classes
 
 - `kızgın` → anger  
 - `korku` → fear  
@@ -43,7 +43,7 @@ These labels are encoded using `LabelEncoder` before training and used for super
 
 ---
 
-## 🛠️ Technologies & Libraries
+##  Technologies & Libraries
 
 - `pandas`, `numpy`, `matplotlib`, `seaborn`
 - `scikit-learn`:
@@ -55,7 +55,7 @@ These labels are encoded using `LabelEncoder` before training and used for super
 
 ---
 
-## 🧪 Models Used
+##  Models Used
 
 | Model                    | Description                      |
 |--------------------------|----------------------------------|
@@ -67,7 +67,7 @@ These labels are encoded using `LabelEncoder` before training and used for super
 
 ---
 
-### 🤖 Fine-Tuning with BERT
+###  Fine-Tuning with BERT
 
 Unlike using BERT just for embeddings, this project performs **full fine-tuning** on the `dbmdz/bert-base-turkish-cased` model. During training:
 
@@ -82,7 +82,7 @@ Unlike using BERT just for embeddings, this project performs **full fine-tuning*
 This approach improves performance significantly over frozen embeddings.
 
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 Each model is evaluated using:
 - **Accuracy**
